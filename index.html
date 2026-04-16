@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>hidi - Portfolio</title>
+  <meta name="description" content="hidi의 프로젝트 포트폴리오. 아이디어를 프로덕트로 만들어가는 과정을 기록합니다.">
+  <meta property="og:title" content="hidi - Portfolio">
+  <meta property="og:description" content="아이디어를 프로덕트로 만들어가는 과정을 기록합니다.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://kaeba0616.github.io">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🚀</text></svg>">
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="nav" id="nav">
+    <a href="#" class="nav-logo"><span>hidi</span>.dev</a>
+    <div class="nav-links">
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+      <a href="https://github.com/kaeba0616" target="_blank" rel="noopener noreferrer">GitHub</a>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero" id="hero">
+    <div class="hero-badge">
+      <span class="dot"></span>
+      Building in public
+    </div>
+    <h1>아이디어를 <em>프로덕트</em>로</h1>
+    <p class="hero-desc">머릿속 아이디어를 실제 서비스로 만들어가는 과정을 기록합니다.<br>Talk is cheap. Ship it.</p>
+    <div class="hero-stats">
+      <div class="hero-stat">
+        <div class="number">10</div>
+        <div class="label">Projects</div>
+      </div>
+      <div class="hero-stat">
+        <div class="number">6</div>
+        <div class="label">Languages</div>
+      </div>
+      <div class="hero-stat">
+        <div class="number">6</div>
+        <div class="label">Followers</div>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <span>SCROLL</span>
+      <div class="arrow"></div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section class="section" id="about">
+    <div class="section-header">
+      <div class="section-label">About</div>
+      <h2 class="section-title">개발자 hidi</h2>
+    </div>
+    <div class="about-content">
+      <p class="about-text">
+        다양한 아이디어를 직접 만들어보는 것을 좋아하는 개발자입니다.
+        모바일 앱부터 웹 서비스, AI 도구, 개발자 유틸리티까지 — 재미있는 것이라면 무엇이든 만듭니다.
+      </p>
+      <div class="tech-stack">
+        <div class="tech-group">
+          <div class="tech-group-label">Languages</div>
+          <div class="tech-tags">
+            <span class="tech-tag" data-lang="typescript">TypeScript</span>
+            <span class="tech-tag" data-lang="python">Python</span>
+            <span class="tech-tag" data-lang="dart">Dart</span>
+            <span class="tech-tag" data-lang="lua">Lua</span>
+            <span class="tech-tag" data-lang="go">Go</span>
+            <span class="tech-tag" data-lang="java">Java</span>
+          </div>
+        </div>
+        <div class="tech-group">
+          <div class="tech-group-label">Frameworks & Tools</div>
+          <div class="tech-tags">
+            <span class="tech-tag">Next.js</span>
+            <span class="tech-tag">Flutter</span>
+            <span class="tech-tag">Bun</span>
+            <span class="tech-tag">Blender</span>
+            <span class="tech-tag">Stable Diffusion</span>
+            <span class="tech-tag">Supabase</span>
+            <span class="tech-tag">Docker</span>
+            <span class="tech-tag">Claude Code</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section class="section section-alt" id="projects">
+    <div class="section-header">
+      <div class="section-label">Projects</div>
+      <h2 class="section-title">만들어온 것들</h2>
+    </div>
+    <div class="filter-tabs">
+      <button class="filter-tab active" data-filter="all">All</button>
+      <button class="filter-tab" data-filter="typescript">TypeScript</button>
+      <button class="filter-tab" data-filter="python">Python</button>
+      <button class="filter-tab" data-filter="dart">Dart</button>
+    </div>
+    <div class="projects-grid">
+
+      <!-- productFactory -->
+      <a href="https://github.com/kaeba0616/productFactory" target="_blank" rel="noopener noreferrer"
+         class="project-card" data-lang="javascript" data-status="in-progress">
+        <div class="card-header">
+          <span class="card-emoji">🏭</span>
+          <span class="card-status" data-status="in-progress">
+            <span class="status-dot"></span>
+            In Progress
+          </span>
+        </div>
+        <h3 class="card-title">Product Factory</h3>
+        <p class="card-desc">프로젝트 아이디어를 관리하고 진행 상황을 추적하는 멀티유저 포트폴리오 플랫폼</p>
+        <div class="card-tags">
+          <span class="card-tag">Next.js</span>
+          <span class="card-tag">Supabase</span>
+          <span class="card-tag">Auth.js</span>
+        </div>
+      </a>
+
+      <!-- wheretorun -->
+      <a href="https://github.com/kaeba0616/wheretorun" target="_blank" rel="noopener noreferrer"
+         class="project-card" data-lang="dart" data-status="in-progress">
+        <div class="card-header">
+          <span class="card-emoji">🏃</span>
+          <span class="card-status" data-status="in-progress">
+            <span class="status-dot"></span>
+            In Progress
+          </span>
+        </div>
+        <h3 class="card-title">어디로 뛰어</h3>
+        <p class="card-desc">러닝 내비게이션 앱 — 달리기 좋은 경로를 추천해주는 모바일 앱</p>
+        <div class="card-tags">
+          <span class="card-tag">Flutter</span>
+          <span class="card-tag">Dart</span>
+          <span class="card-tag">Maps API</span>
+        </div>
+      </a>
+
+      <!-- pixel-animation-generator -->
+      <a href="https://github.com/kaeba0616/pixel-animation-generator" target="_blank" rel="noopener noreferrer"
+         class="project-card" data-lang="python" data-status="completed">
+        <div class="card-header">
+          <span class="card-emoji">🎨</span>
+          <span class="card-status" data-status="completed">
+            <span class="status-dot"></span>
+            Completed
+          </span>
+        </div>
+        <h3 class="card-title">Pixel Animation Generator</h3>
+        <p class="card-desc">AI 기반 픽셀 캐릭터 애니메이션 자동 생성기 — Gemini 대화로 디자인, SD Forge로 프레임 생성</p>
+        <div class="card-tags">
+          <span class="card-tag">Python</span>
+          <span class="card-tag">Gemini API</span>
+          <span class="card-tag">Stable Diffusion</span>
+        </div>
+      </a>
+
+      <!-- chzzkDevChat -->
+      <a href="https://github.com/kaeba0616/chzzkDevChat" target="_blank" rel="noopener noreferrer"
+         class="project-card" data-lang="typescript" data-status="completed">
+        <div class="card-header">
+          <span class="card-emoji">💬</span>
+          <span class="card-status" data-status="completed">
+            <span class="status-dot"></span>
+            Completed
+          </span>
+        </div>
+        <h3 class="card-title">Chzzk Dev Chat</h3>
+        <p class="card-desc">치지직 라이브 채팅 아이디어를 Claude Code에 전달하는 MCP 채널 서버</p>
+        <div class="card-tags">
+          <span class="card-tag">TypeScript</span>
+          <span class="card-tag">Bun</span>
+          <span class="card-tag">MCP</span>
+        </div>
+      </a>
+
+      <!-- autorig3d -->
+      <a href="https://github.com/kaeba0616/autorig3d" target="_blank" rel="noopener noreferrer"
+         class="project-card" data-lang="python" data-status="completed">
+        <div class="card-header">
+          <span class="card-emoji">🦴</span>
+          <span class="card-status" data-status="completed">
+            <span class="status-dot"></span>
+            Completed
+          </span>
+        </div>
+        <h3 class="card-title">AutoRig3D</h3>
+        <p class="card-desc">이미지 한 장에서 리깅된 3D 모델을 자동 생성 — Meshy AI + Blender 파이프라인</p>
+        <div class="card-tags">
+          <span class="card-tag">Python</span>
+          <span class="card-tag">Blender</span>
+          <span class="card-tag">Meshy AI</span>
+        </div>
+      </a>
+
+      <!-- performanceJP -->
+      <a href="https://github.com/kaeba0616/performanceJP" target="_blank" rel="noopener noreferrer"
+         class="project-card" data-lang="typescript" data-status="in-progress">
+        <div class="card-header">
+          <span class="card-emoji">🎵</span>
+          <span class="card-status" data-status="in-progress">
+            <span class="status-dot"></span>
+            In Progress
+          </span>
+        </div>
+        <h3 class="card-title">PerformanceJP</h3>
+        <p class="card-desc">일본 아티스트 내한공연 트래커 — 공연 일정 및 티케팅 알림 서비스</p>
+        <div class="card-tags">
+          <span class="card-tag">TypeScript</span>
+          <span class="card-tag">Web Scraping</span>
+        </div>
+      </a>
+
+      <!-- claude-discord-hub -->
+      <a href="https://github.com/kaeba0616/claude-discord-hub" target="_blank" rel="noopener noreferrer"
+         class="project-card" data-lang="typescript" data-status="completed">
+        <div class="card-header">
+          <span class="card-emoji">🤖</span>
+          <span class="card-status" data-status="completed">
+            <span class="status-dot"></span>
+            Completed
+          </span>
+        </div>
+        <h3 class="card-title">Claude Discord Hub</h3>
+        <p class="card-desc">Discord에서 여러 Claude Code 세션을 브릿지하는 봇 — 채널별 독립 세션</p>
+        <div class="card-tags">
+          <span class="card-tag">TypeScript</span>
+          <span class="card-tag">Discord.js</span>
+          <span class="card-tag">Claude Code</span>
+        </div>
+      </a>
+
+      <!-- hibi-music -->
+      <a href="https://github.com/kaeba0616/hibi-music" target="_blank" rel="noopener noreferrer"
+         class="project-card" data-lang="dart" data-status="in-progress">
+        <div class="card-header">
+          <span class="card-emoji">🎶</span>
+          <span class="card-status" data-status="in-progress">
+            <span class="status-dot"></span>
+            In Progress
+          </span>
+        </div>
+        <h3 class="card-title">Hibi Music</h3>
+        <p class="card-desc">매일 JPOP 한 곡을 추천받고, 팬들과 소통하는 일본 음악 공유 플랫폼</p>
+        <div class="card-tags">
+          <span class="card-tag">Flutter</span>
+          <span class="card-tag">Go</span>
+          <span class="card-tag">Java</span>
+        </div>
+      </a>
+
+      <!-- git-grass-diff -->
+      <a href="https://github.com/kaeba0616/git-grass-diff" target="_blank" rel="noopener noreferrer"
+         class="project-card" data-lang="typescript" data-status="in-progress">
+        <div class="card-header">
+          <span class="card-emoji">🌱</span>
+          <span class="card-status" data-status="in-progress">
+            <span class="status-dot"></span>
+            In Progress
+          </span>
+        </div>
+        <h3 class="card-title">Git Grass Diff</h3>
+        <p class="card-desc">GitHub 잔디 배틀 — 친구와 잔디 기여도를 비교하세요!</p>
+        <div class="card-tags">
+          <span class="card-tag">TypeScript</span>
+          <span class="card-tag">GitHub API</span>
+        </div>
+      </a>
+
+      <!-- pTODOlist -->
+      <a href="https://github.com/kaeba0616/pTODOlist" target="_blank" rel="noopener noreferrer"
+         class="project-card" data-lang="dart" data-status="completed">
+        <div class="card-header">
+          <span class="card-emoji">✅</span>
+          <span class="card-status" data-status="completed">
+            <span class="status-dot"></span>
+            Completed
+          </span>
+        </div>
+        <h3 class="card-title">pTODOlist</h3>
+        <p class="card-desc">매일 반복하는 루틴과 할 일의 완료 여부를 추적하는 로컬 전용 모바일 앱</p>
+        <div class="card-tags">
+          <span class="card-tag">Flutter</span>
+          <span class="card-tag">Hive</span>
+          <span class="card-tag">Riverpod</span>
+        </div>
+      </a>
+
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="section" id="contact">
+    <div class="section-header">
+      <div class="section-label">Contact</div>
+      <h2 class="section-title">연락하기</h2>
+    </div>
+    <div class="contact-links">
+      <a href="https://github.com/kaeba0616" target="_blank" rel="noopener noreferrer" class="contact-card">
+        <svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+        <div>
+          <div class="contact-label">GitHub</div>
+          <div class="contact-value">@kaeba0616</div>
+        </div>
+      </a>
+      <a href="mailto:dev.hibi@gmail.com" class="contact-card">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="24" height="24"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+        <div>
+          <div class="contact-label">Email</div>
+          <div class="contact-value">dev.hibi@gmail.com</div>
+        </div>
+      </a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>hidi's Portfolio &copy; 2025</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
