@@ -1,334 +1,210 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>hidi - Portfolio</title>
-  <meta name="description" content="hidi의 프로젝트 포트폴리오. 아이디어를 프로덕트로 만들어가는 과정을 기록합니다.">
-  <meta property="og:title" content="hidi - Portfolio">
-  <meta property="og:description" content="아이디어를 프로덕트로 만들어가는 과정을 기록합니다.">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://kaeba0616.github.io">
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🚀</text></svg>">
-  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
-  <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>이민섭 — 소프트웨어 엔지니어</title>
+<meta name="description" content="일상의 불편함을 서비스로 만드는 개발자 이민섭의 포트폴리오. 실시간 데이터, AI 예측, 그리고 사람들의 문제를 푸는 제품을 만듭니다.">
+<meta property="og:title" content="이민섭 — 소프트웨어 엔지니어">
+<meta property="og:description" content="일상의 불편함을 서비스로 만드는 개발자 이민섭의 포트폴리오">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://kaeba0616.github.io">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@400;500;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>👋</text></svg>">
 </head>
 <body>
 
-  <!-- Navigation -->
-  <nav class="nav" id="nav">
-    <a href="#" class="nav-logo"><span>hidi</span>.dev</a>
-    <div class="nav-links">
-      <a href="#about">About</a>
-      <a href="#projects">Projects</a>
-      <a href="#contact">Contact</a>
-      <a href="https://github.com/kaeba0616" target="_blank" rel="noopener noreferrer">GitHub</a>
-    </div>
+<header class="nav">
+  <a class="nav-logo" href="#top">이민섭<span class="nav-dot">.</span></a>
+  <nav class="nav-links">
+    <a href="#projects">프로젝트</a>
+    <a href="#career">경력</a>
+    <a href="#contact">연락처</a>
+    <a class="nav-github" href="https://github.com/kaeba0616" target="_blank" rel="noopener">GitHub ↗</a>
   </nav>
+</header>
 
-  <!-- Hero -->
-  <section class="hero" id="hero">
-    <div class="hero-badge">
-      <span class="dot"></span>
-      Building in public
-    </div>
-    <h1>아이디어를 <em>프로덕트</em>로</h1>
-    <p class="hero-desc">머릿속 아이디어를 실제 서비스로 만들어가는 과정을 기록합니다.<br>Talk is cheap. Ship it.</p>
-    <div class="hero-stats">
-      <div class="hero-stat">
-        <div class="number">10</div>
-        <div class="label">Projects</div>
-      </div>
-      <div class="hero-stat">
-        <div class="number">6</div>
-        <div class="label">Languages</div>
-      </div>
-      <div class="hero-stat">
-        <div class="number">6</div>
-        <div class="label">Followers</div>
-      </div>
-    </div>
-    <div class="scroll-indicator">
-      <span>SCROLL</span>
-      <div class="arrow"></div>
+<main id="top">
+
+  <section class="hero">
+    <p class="eyebrow">SOFTWARE ENGINEER · SEOUL</p>
+    <h1>안녕하세요,<br>만들면서 배우는 개발자<br><em>이민섭</em>입니다.</h1>
+    <p class="hero-copy">
+      일상의 불편함을 발견하면 직접 서비스로 만듭니다.<br class="br-wide">
+      실시간 데이터와 AI 예측, 그리고 사람들의 문제를 푸는 제품을 만들어 왔습니다.
+    </p>
+    <div class="hero-actions">
+      <a class="btn btn-primary" href="#projects">프로젝트 보기</a>
+      <a class="btn" href="mailto:alstjq1012@gmail.com">이메일 보내기</a>
     </div>
   </section>
 
-  <!-- About -->
-  <section class="section" id="about">
-    <div class="section-header">
-      <div class="section-label">About</div>
-      <h2 class="section-title">개발자 hidi</h2>
-    </div>
-    <div class="about-content">
-      <p class="about-text">
-        다양한 아이디어를 직접 만들어보는 것을 좋아하는 개발자입니다.
-        모바일 앱부터 웹 서비스, AI 도구, 개발자 유틸리티까지 — 재미있는 것이라면 무엇이든 만듭니다.
-      </p>
-      <div class="tech-stack">
-        <div class="tech-group">
-          <div class="tech-group-label">Languages</div>
-          <div class="tech-tags">
-            <span class="tech-tag" data-lang="typescript">TypeScript</span>
-            <span class="tech-tag" data-lang="python">Python</span>
-            <span class="tech-tag" data-lang="dart">Dart</span>
-            <span class="tech-tag" data-lang="lua">Lua</span>
-            <span class="tech-tag" data-lang="go">Go</span>
-            <span class="tech-tag" data-lang="java">Java</span>
-          </div>
-        </div>
-        <div class="tech-group">
-          <div class="tech-group-label">Frameworks & Tools</div>
-          <div class="tech-tags">
-            <span class="tech-tag">Next.js</span>
-            <span class="tech-tag">Flutter</span>
-            <span class="tech-tag">Bun</span>
-            <span class="tech-tag">Blender</span>
-            <span class="tech-tag">Stable Diffusion</span>
-            <span class="tech-tag">Supabase</span>
-            <span class="tech-tag">Docker</span>
-            <span class="tech-tag">Claude Code</span>
-          </div>
-        </div>
-      </div>
-    </div>
+  <section class="skills" aria-label="기술 스택">
+    <ul class="skills-list">
+      <li>Go</li><li>Python</li><li>Flutter</li><li>Next.js</li>
+      <li>PostgreSQL</li><li>Firebase</li><li>GCP</li><li>Docker</li>
+    </ul>
   </section>
 
-  <!-- Projects -->
-  <section class="section section-alt" id="projects">
-    <div class="section-header">
-      <div class="section-label">Projects</div>
-      <h2 class="section-title">만들어온 것들</h2>
-    </div>
-    <div class="filter-tabs">
-      <button class="filter-tab active" data-filter="all">All</button>
-      <button class="filter-tab" data-filter="typescript">TypeScript</button>
-      <button class="filter-tab" data-filter="python">Python</button>
-      <button class="filter-tab" data-filter="dart">Dart</button>
-    </div>
-    <div class="projects-grid">
+  <section id="projects" class="section">
+    <h2><span class="section-no">01</span>프로젝트</h2>
+    <p class="section-lead">필요해서 만들었고, 만들면서 성장했습니다.</p>
 
-      <!-- productFactory -->
-      <a href="https://github.com/kaeba0616/productFactory" target="_blank" rel="noopener noreferrer"
-         class="project-card" data-lang="javascript" data-status="in-progress">
-        <div class="card-header">
-          <span class="card-emoji">🏭</span>
-          <span class="card-status" data-status="in-progress">
-            <span class="status-dot"></span>
-            In Progress
-          </span>
-        </div>
-        <h3 class="card-title">Product Factory</h3>
-        <p class="card-desc">프로젝트 아이디어를 관리하고 진행 상황을 추적하는 멀티유저 포트폴리오 플랫폼</p>
-        <div class="card-tags">
-          <span class="card-tag">Next.js</span>
-          <span class="card-tag">Supabase</span>
-          <span class="card-tag">Auth.js</span>
-        </div>
-      </a>
+    <div class="project-grid">
 
-      <!-- wheretorun -->
-      <a href="https://github.com/kaeba0616/wheretorun" target="_blank" rel="noopener noreferrer"
-         class="project-card" data-lang="dart" data-status="in-progress">
-        <div class="card-header">
-          <span class="card-emoji">🏃</span>
-          <span class="card-status" data-status="in-progress">
-            <span class="status-dot"></span>
-            In Progress
-          </span>
+      <article class="project featured">
+        <div class="project-head">
+          <h3>WaitZero</h3>
+          <span class="badge badge-award">🏆 장려상 · 2026 전국 통합데이터 활용 공모전</span>
         </div>
-        <h3 class="card-title">어디로 뛰어</h3>
-        <p class="card-desc">러닝 내비게이션 앱 — 달리기 좋은 경로를 추천해주는 모바일 앱</p>
-        <div class="card-tags">
-          <span class="card-tag">Flutter</span>
-          <span class="card-tag">Dart</span>
-          <span class="card-tag">Maps API</span>
-        </div>
-      </a>
+        <p>전국 공영 자전거 실시간 데이터를 기반으로, 즐겨찾기한 대여소의 자전거가
+        언제 소진될지 <strong>시계열 AI로 예측</strong>해 미리 알려주는 모바일 서비스.</p>
+        <ul class="stack"><li>Flutter</li><li>Python</li></ul>
+      </article>
 
-      <!-- pixel-animation-generator -->
-      <a href="https://github.com/kaeba0616/pixel-animation-generator" target="_blank" rel="noopener noreferrer"
-         class="project-card" data-lang="python" data-status="completed">
-        <div class="card-header">
-          <span class="card-emoji">🎨</span>
-          <span class="card-status" data-status="completed">
-            <span class="status-dot"></span>
-            Completed
-          </span>
-        </div>
-        <h3 class="card-title">Pixel Animation Generator</h3>
-        <p class="card-desc">AI 기반 픽셀 캐릭터 애니메이션 자동 생성기 — Gemini 대화로 디자인, SD Forge로 프레임 생성</p>
-        <div class="card-tags">
-          <span class="card-tag">Python</span>
-          <span class="card-tag">Gemini API</span>
-          <span class="card-tag">Stable Diffusion</span>
-        </div>
-      </a>
+      <article class="project">
+        <div class="project-head"><h3>RAG Chatbot</h3></div>
+        <p>의학회 사이트의 지침서·행사 일정 데이터를 키워드와 맥락을 함께 고려하는
+        <strong>Hybrid Search</strong>로 검색하는 RAG 기반 챗봇.</p>
+        <ul class="stack"><li>GCP</li><li>Python</li></ul>
+      </article>
 
-      <!-- chzzkDevChat -->
-      <a href="https://github.com/kaeba0616/chzzkDevChat" target="_blank" rel="noopener noreferrer"
-         class="project-card" data-lang="typescript" data-status="completed">
-        <div class="card-header">
-          <span class="card-emoji">💬</span>
-          <span class="card-status" data-status="completed">
-            <span class="status-dot"></span>
-            Completed
-          </span>
+      <article class="project">
+        <div class="project-head">
+          <h3>Growlytics</h3>
+          <span class="badge">개발 중 · MetaOrganic TIPS</span>
         </div>
-        <h3 class="card-title">Chzzk Dev Chat</h3>
-        <p class="card-desc">치지직 라이브 채팅 아이디어를 Claude Code에 전달하는 MCP 채널 서버</p>
-        <div class="card-tags">
-          <span class="card-tag">TypeScript</span>
-          <span class="card-tag">Bun</span>
-          <span class="card-tag">MCP</span>
-        </div>
-      </a>
+        <p>생육 데이터와 토양 데이터를 활용한 AI로 식물이 잘 성장하도록
+        솔루션을 제공하는 <strong>식물 생애주기 관리 SaaS</strong>.</p>
+        <ul class="stack"><li>Next.js</li><li>PostgreSQL</li><li>Python</li></ul>
+      </article>
 
-      <!-- autorig3d -->
-      <a href="https://github.com/kaeba0616/autorig3d" target="_blank" rel="noopener noreferrer"
-         class="project-card" data-lang="python" data-status="completed">
-        <div class="card-header">
-          <span class="card-emoji">🦴</span>
-          <span class="card-status" data-status="completed">
-            <span class="status-dot"></span>
-            Completed
-          </span>
+      <article class="project">
+        <div class="project-head"><h3>ER NEBI</h3></div>
+        <p>이터널리턴 게임 전적 사이트. 기존 사이트가 캐릭터별 지표만 제공하는 한계를 넘어
+        <strong>팀 단위 지표 분석</strong>을 제공합니다.</p>
+        <ul class="stack"><li>Go</li><li>Next.js</li><li>MinIO</li><li>Docker</li></ul>
+        <div class="project-links">
+          <a href="https://github.com/erStatistic/es_backend" target="_blank" rel="noopener">Backend ↗</a>
+          <a href="https://github.com/erStatistic/er-stats" target="_blank" rel="noopener">Frontend ↗</a>
         </div>
-        <h3 class="card-title">AutoRig3D</h3>
-        <p class="card-desc">이미지 한 장에서 리깅된 3D 모델을 자동 생성 — Meshy AI + Blender 파이프라인</p>
-        <div class="card-tags">
-          <span class="card-tag">Python</span>
-          <span class="card-tag">Blender</span>
-          <span class="card-tag">Meshy AI</span>
-        </div>
-      </a>
+      </article>
 
-      <!-- performanceJP -->
-      <a href="https://github.com/kaeba0616/performanceJP" target="_blank" rel="noopener noreferrer"
-         class="project-card" data-lang="typescript" data-status="in-progress">
-        <div class="card-header">
-          <span class="card-emoji">🎵</span>
-          <span class="card-status" data-status="in-progress">
-            <span class="status-dot"></span>
-            In Progress
-          </span>
+      <article class="project">
+        <div class="project-head"><h3>Moodiary</h3></div>
+        <p>감정 분석 일기 앱. 비슷한 감정을 가진 사람들과 공감을 나누며
+        부정적인 감정을 완화하도록 돕습니다.</p>
+        <ul class="stack"><li>Flutter</li><li>Firebase</li></ul>
+        <div class="project-links">
+          <a href="https://github.com/kaeba0616/moodiary" target="_blank" rel="noopener">GitHub ↗</a>
         </div>
-        <h3 class="card-title">PerformanceJP</h3>
-        <p class="card-desc">일본 아티스트 내한공연 트래커 — 공연 일정 및 티케팅 알림 서비스</p>
-        <div class="card-tags">
-          <span class="card-tag">TypeScript</span>
-          <span class="card-tag">Web Scraping</span>
-        </div>
-      </a>
+      </article>
 
-      <!-- claude-discord-hub -->
-      <a href="https://github.com/kaeba0616/claude-discord-hub" target="_blank" rel="noopener noreferrer"
-         class="project-card" data-lang="typescript" data-status="completed">
-        <div class="card-header">
-          <span class="card-emoji">🤖</span>
-          <span class="card-status" data-status="completed">
-            <span class="status-dot"></span>
-            Completed
-          </span>
+      <article class="project">
+        <div class="project-head"><h3>Our-Tools</h3></div>
+        <p>매주 반복되는 교회 PPT 검색·다운로드·정리 작업의 시간을 줄이기 위해 만든
+        구글 PPT 크롤링 CLI 도구.</p>
+        <ul class="stack"><li>Go</li></ul>
+        <div class="project-links">
+          <a href="https://github.com/kaeba0616/our-tools" target="_blank" rel="noopener">GitHub ↗</a>
         </div>
-        <h3 class="card-title">Claude Discord Hub</h3>
-        <p class="card-desc">Discord에서 여러 Claude Code 세션을 브릿지하는 봇 — 채널별 독립 세션</p>
-        <div class="card-tags">
-          <span class="card-tag">TypeScript</span>
-          <span class="card-tag">Discord.js</span>
-          <span class="card-tag">Claude Code</span>
-        </div>
-      </a>
+      </article>
 
-      <!-- hibi-music -->
-      <a href="https://github.com/kaeba0616/hibi-music" target="_blank" rel="noopener noreferrer"
-         class="project-card" data-lang="dart" data-status="in-progress">
-        <div class="card-header">
-          <span class="card-emoji">🎶</span>
-          <span class="card-status" data-status="in-progress">
-            <span class="status-dot"></span>
-            In Progress
-          </span>
+      <article class="project">
+        <div class="project-head"><h3>WhereToRun</h3></div>
+        <p>러닝이 취미로 떠오르는 요즘, 러닝을 위한 네비게이션이 없어 직접 만든
+        러닝 네비게이션 앱.</p>
+        <ul class="stack"><li>Flutter</li></ul>
+        <div class="project-links">
+          <a href="https://github.com/kaeba0616/wheretorun" target="_blank" rel="noopener">GitHub ↗</a>
+          <a href="https://www.youtube.com/shorts/_1NHZKjmFFw" target="_blank" rel="noopener">시연 영상 ↗</a>
         </div>
-        <h3 class="card-title">Hibi Music</h3>
-        <p class="card-desc">매일 JPOP 한 곡을 추천받고, 팬들과 소통하는 일본 음악 공유 플랫폼</p>
-        <div class="card-tags">
-          <span class="card-tag">Flutter</span>
-          <span class="card-tag">Go</span>
-          <span class="card-tag">Java</span>
-        </div>
-      </a>
-
-      <!-- git-grass-diff -->
-      <a href="https://github.com/kaeba0616/git-grass-diff" target="_blank" rel="noopener noreferrer"
-         class="project-card" data-lang="typescript" data-status="in-progress">
-        <div class="card-header">
-          <span class="card-emoji">🌱</span>
-          <span class="card-status" data-status="in-progress">
-            <span class="status-dot"></span>
-            In Progress
-          </span>
-        </div>
-        <h3 class="card-title">Git Grass Diff</h3>
-        <p class="card-desc">GitHub 잔디 배틀 — 친구와 잔디 기여도를 비교하세요!</p>
-        <div class="card-tags">
-          <span class="card-tag">TypeScript</span>
-          <span class="card-tag">GitHub API</span>
-        </div>
-      </a>
-
-      <!-- pTODOlist -->
-      <a href="https://github.com/kaeba0616/pTODOlist" target="_blank" rel="noopener noreferrer"
-         class="project-card" data-lang="dart" data-status="completed">
-        <div class="card-header">
-          <span class="card-emoji">✅</span>
-          <span class="card-status" data-status="completed">
-            <span class="status-dot"></span>
-            Completed
-          </span>
-        </div>
-        <h3 class="card-title">pTODOlist</h3>
-        <p class="card-desc">매일 반복하는 루틴과 할 일의 완료 여부를 추적하는 로컬 전용 모바일 앱</p>
-        <div class="card-tags">
-          <span class="card-tag">Flutter</span>
-          <span class="card-tag">Hive</span>
-          <span class="card-tag">Riverpod</span>
-        </div>
-      </a>
+      </article>
 
     </div>
   </section>
 
-  <!-- Contact -->
-  <section class="section" id="contact">
-    <div class="section-header">
-      <div class="section-label">Contact</div>
-      <h2 class="section-title">연락하기</h2>
-    </div>
+  <section id="career" class="section">
+    <h2><span class="section-no">02</span>경력 & 학력</h2>
+    <ol class="timeline">
+      <li>
+        <span class="timeline-when">2026.02 – 2026.04</span>
+        <div class="timeline-body">
+          <h3>m2community</h3>
+          <p>개발 팀원</p>
+        </div>
+      </li>
+      <li>
+        <span class="timeline-when">2025.09 – 2026.01</span>
+        <div class="timeline-body">
+          <h3>MetaOrganic</h3>
+          <p>연구원 · TIPS 과제 스마트팜 SaaS 개발</p>
+        </div>
+      </li>
+      <li>
+        <span class="timeline-when">2018 – 2025</span>
+        <div class="timeline-body">
+          <h3>서울과학기술대학교</h3>
+          <p>컴퓨터공학과 졸업</p>
+        </div>
+      </li>
+    </ol>
+  </section>
+
+  <section id="contact" class="section contact">
+    <h2><span class="section-no">03</span>연락처</h2>
+    <p class="contact-copy">함께 만들 이야기가 있다면 편하게 연락 주세요.</p>
     <div class="contact-links">
-      <a href="https://github.com/kaeba0616" target="_blank" rel="noopener noreferrer" class="contact-card">
-        <svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
-        <div>
-          <div class="contact-label">GitHub</div>
-          <div class="contact-value">@kaeba0616</div>
-        </div>
-      </a>
-      <a href="mailto:dev.hibi@gmail.com" class="contact-card">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="24" height="24"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
-        <div>
-          <div class="contact-label">Email</div>
-          <div class="contact-value">dev.hibi@gmail.com</div>
-        </div>
-      </a>
+      <a class="btn btn-primary" href="mailto:alstjq1012@gmail.com">alstjq1012@gmail.com</a>
+      <a class="btn" href="https://github.com/kaeba0616" target="_blank" rel="noopener">github.com/kaeba0616</a>
     </div>
   </section>
 
-  <!-- Footer -->
-  <footer class="footer">
-    <p>hidi's Portfolio &copy; 2025</p>
-  </footer>
+</main>
 
-  <script src="script.js"></script>
+<footer class="footer">
+  <p>© 2026 이민섭 · Built with plain HTML/CSS/JS</p>
+</footer>
+
+<!-- 시메지 스타일 마스코트: 마우스를 따라 팔과 눈동자가 움직입니다 -->
+<div class="mascot" id="mascot" aria-hidden="true">
+  <div class="mascot-bubble" id="mascotBubble">마우스를 움직여 보세요! 👀</div>
+  <svg id="mascotSvg" viewBox="0 0 220 200" width="170" height="155">
+    <!-- 팔 (마우스를 따라 회전, 몸통 뒤에 배치) -->
+    <g id="arm">
+      <path d="M92 141 L50 141 L50 163 L92 163 Z" fill="#cfe9dd" stroke="#182229" stroke-width="3" stroke-linejoin="round"/>
+      <circle cx="44" cy="152" r="11" fill="#f5d3b3" stroke="#182229" stroke-width="3"/>
+      <rect x="12" y="147.5" width="26" height="9" rx="4.5" fill="#f5d3b3" stroke="#182229" stroke-width="3"/>
+    </g>
+
+    <!-- 몸통 (후드) -->
+    <path d="M78 200 L78 162 Q78 130 112 128 L152 128 Q188 130 188 164 L188 200 Z"
+          fill="#cfe9dd" stroke="#182229" stroke-width="3"/>
+    <path d="M120 142 L120 160 M138 142 L138 160" stroke="#0e7a5f" stroke-width="3" stroke-linecap="round" fill="none"/>
+
+    <!-- 머리 -->
+    <g id="head">
+      <circle cx="132" cy="82" r="46" fill="#f5d3b3" stroke="#182229" stroke-width="3"/>
+      <path d="M88 74 Q86 34 132 34 Q178 34 176 74 Q168 52 150 52 Q160 44 148 40 Q138 50 112 54 Q94 58 88 74 Z"
+            fill="#2a2e33" stroke="#182229" stroke-width="3" stroke-linejoin="round"/>
+      <g class="eye">
+        <ellipse cx="116" cy="86" rx="8" ry="9" fill="#fff" stroke="#182229" stroke-width="2.5"/>
+        <circle class="pupil" cx="116" cy="86" r="3.6" fill="#182229"/>
+      </g>
+      <g class="eye">
+        <ellipse cx="150" cy="86" rx="8" ry="9" fill="#fff" stroke="#182229" stroke-width="2.5"/>
+        <circle class="pupil" cx="150" cy="86" r="3.6" fill="#182229"/>
+      </g>
+      <circle cx="104" cy="102" r="5" fill="#f2b8a0" opacity="0.7"/>
+      <circle cx="162" cy="102" r="5" fill="#f2b8a0" opacity="0.7"/>
+      <path id="mouth" d="M126 108 Q133 115 140 108" fill="none" stroke="#182229" stroke-width="3" stroke-linecap="round"/>
+    </g>
+  </svg>
+</div>
+
+<script src="script.js"></script>
 </body>
 </html>
